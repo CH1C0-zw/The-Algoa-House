@@ -3,11 +3,10 @@
 <head>
   <meta charset="utf-8" />
   <meta name="description"
-      content="The Algoa House is a refined boutique accommodation in Port Elizabeth, offering calm coastal luxury, thoughtful rooms, and effortless comfort." />
+      content="The Algoa House - Boutique hotel and spa in Port Elizabeth, South Africa. Luxury accommodation and wellness experiences in Summerstrand." />
   <meta name="robots" content="index, follow" />
   <link rel="canonical" href="https://thealgoahouse.co.za/" />
   <title>The Algoa House | Boutique Stay in Port Elizabeth</title>
-  <meta name="description" content="The Algoa House website is currently under maintenance. We'll be back soon!" />
   <style>
     :root{
       --bg: #0b0f14;
@@ -111,6 +110,11 @@
       color: var(--muted);
       margin: 0 0 40px;
       animation: fadeIn 1s ease-out 0.6s both;
+    }
+    
+    .about-preview {
+      margin: 40px 0;
+      animation: fadeIn 1s ease-out 0.7s both;
     }
     
     .contact-info {
@@ -227,15 +231,21 @@
         We sincerely apologize for the inconvenience. Our website is currently undergoing scheduled maintenance to enhance your experience. Our team is working diligently to bring you an even better service.
       </p>
       
+      <div class="about-preview">
+        <p class="message">
+          The Algoa House is a boutique hotel and spa located in the heart of Summerstrand, 
+          Port Elizabeth. We offer luxury accommodation, world-class spa treatments, and 
+          exceptional hospitality on the beautiful Eastern Cape coastline of South Africa.
+        </p>
+      </div>
+      
       <div class="contact-info">
         <div class="contact-title">In the meantime, reach us directly:</div>
         <div class="contact-item">
           <a href="tel:+27414370000">+27 (0) 41 437 0000</a>
         </div>
         <div class="contact-item">
-          <a href="mailto:info@thealgoahouse.co.za
-          ">info@thealgoahouse.co.za
-          </a>
+          <a href="mailto:info@thealgoahouse.co.za">info@thealgoahouse.co.za</a>
         </div>
         <div class="contact-item" style="color: var(--muted); margin-top: 15px;">
           Marine Drive, Summerstrand<br>
@@ -256,10 +266,29 @@
     </div>
   </div>
   
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Hotel",
+    "name": "The Algoa House",
+    "description": "Boutique hotel and spa in Port Elizabeth, South Africa. Luxury accommodation and wellness experiences in Summerstrand.",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Marine Drive, Summerstrand",
+      "addressLocality": "Port Elizabeth",
+      "postalCode": "6001",
+      "addressCountry": "ZA"
+    },
+    "telephone": "+27414370000",
+    "email": "info@thealgoahouse.co.za",
+    "url": "https://thealgoahouse.co.za",
+    <!-- "priceRange": "$$" -->
+  }
+  </script>
+  
   <script>
     // Set current year
     document.getElementById('year').textContent = new Date().getFullYear();
   </script>
 </body>
 </html>
-
